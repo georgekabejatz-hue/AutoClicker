@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Auto Clicker</string>
+    <string name="accessibility_service_description">Lets Auto Clicker tap the points you set, on a schedule, on top of other apps.</string>
+</resources>
