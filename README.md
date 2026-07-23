@@ -1,38 +1,56 @@
-# AutoClicker 🎯
+# AutoClicker
 
 Professional Android AutoClicker app with accessibility service, floating overlay controller, and point-and-click automation.
 
-## Features ✨
+## Features
 
-- **Accessibility Service Integration** - Advanced gesture automation
-- **Floating Overlay Controller** - Draggable interface over any app
-- **Point & Click Recording** - Tap to record click locations
-- **Configurable Intervals** - Customizable automation timing
-- **Huawei Compatible** - Optimized for HMS and EMUI devices
-- **Modern Architecture** - Clean Kotlin codebase
+- 🎯 **Point & Click Automation**: Tap to record click points, automatic replay
+- 🔄 **Accessibility Service**: Uses Android accessibility APIs for reliable automation  
+- 📱 **Floating Controller**: Overlay interface that works on top of any app
+- ⚙️ **Configurable Intervals**: Set custom click timing
+- 🛡️ **Permission Management**: Guided setup for required permissions
+- 📱 **Huawei Compatible**: Works with HMS and EMUI/HarmonyOS
 
-## Setup Instructions 📱
+## Requirements
 
-1. **Download APK** from [GitHub Releases](../../releases) or [GitHub Actions](../../actions)
-2. **Install** the APK on your device
-3. **Enable Accessibility Service** in Settings > Accessibility
-4. **Grant Overlay Permission** in Settings > Special Access
-5. **Start** the floating controller from the app
+- Android 7.0 (API 24) or higher
+- Accessibility service permission
+- Display over other apps permission
 
-## Huawei Device Tips 🔧
+## Installation
 
-- Disable battery optimization for the app
-- Add to protected apps list in EMUI
-- Grant all accessibility permissions
-- Allow display over other apps
+1. Download the APK from the [Releases](../../releases) page
+2. Install on your Android device
+3. Follow the in-app setup to grant required permissions
 
-## Building 🔨
+## Usage
 
-The project uses GitHub Actions for automated APK building:
-- Push to `main` branch triggers build
-- Manual workflow dispatch available
-- APK artifacts available in Actions tab
+1. Open AutoClicker
+2. Enable Accessibility Service (guided setup)
+3. Grant overlay permission (guided setup)  
+4. Start the floating controller
+5. Tap on screen to record click points
+6. Automatic clicking will begin
 
-## License 📄
+## Building from Source
 
-MIT License - feel free to use and modify!
+1. Clone this repository
+2. Open in Android Studio
+3. Build → Build Bundle(s)/APK(s) → Build APK(s)
+
+## Permissions
+
+- **Accessibility Service**: Required for automated tapping
+- **System Alert Window**: Required for floating overlay
+- **Foreground Service**: Required for background operation
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Huawei Device Notes
+
+- Compatible with HMS (Huawei Mobile Services)
+- Works on EMUI/HarmonyOS
+- May require whitelisting in battery optimization
+- Supports AppGallery distribution
